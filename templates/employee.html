@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block employeedata %}
+<h2>EMPLOYEE DATA BANK</h2>
+{% for employee in employeelist %}
+<ul class="list-group">
+    <li class="list-group-item bg-dark active" >{{employee.id}}</li>
+</ul><br>
+<ul class="list-group">
+    <li class="list-group-item">{{employee.name}}</li>
+</ul><br>
+<ul class="list-group">
+    <li class="list-group-item">{{employee.place}}</li>
+</ul><br>
+<ul class="list-group">
+    <li class="list-group-item">{{employee.mobile}}</li>
+</ul><br>
+<ul class="list-group">
+    <li class="list-group-item">{{employee.emailid}}</li>
+</ul><br>
+<ul class="list-group">
+    <li class="list-group-item">{{employee.salary}}</li>
+</ul>
+<br><br>
+{% endfor %}
+{% endblock %}
